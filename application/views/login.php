@@ -56,12 +56,12 @@
           <img src="<?php echo(base_url()); ?>_res/img/logo.png" alt="logo" data-src="<?php echo(base_url()); ?>_res/img/logo.png" data-src-retina="<?php echo(base_url()); ?>_res/img/logo_2x.png" width="78" height="22">
           <p class="p-t-35">Sign into your pages account</p>
           <!-- START Login Form -->
-          <form id="form-login" class="p-t-15" role="form" action="index.html">
+          <form id="form-login" class="p-t-15" role="form" action="<?php echo(base_url()); ?>auth/cek_login">
             <!-- START Form Control-->
             <div class="form-group form-group-default">
               <label>Login</label>
               <div class="controls">
-                <input type="text" name="username" placeholder="User Name" class="form-control" required>
+                <input type="text" name="username" id="username" placeholder="User Name" class="form-control" required>
               </div>
             </div>
             <!-- END Form Control-->
@@ -69,11 +69,11 @@
             <div class="form-group form-group-default">
               <label>Password</label>
               <div class="controls">
-                <input type="password" class="form-control" name="password" placeholder="Credentials" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Credentials" required>
               </div>
             </div>
             <!-- START Form Control-->
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-6 no-padding sm-p-l-10">
                 <div class="checkbox ">
                   <input type="checkbox" value="1" id="checkbox1">
@@ -83,7 +83,7 @@
               <div class="col-md-6 d-flex align-items-center justify-content-end">
                 <a href="#" class="text-info small">Help? Contact Support</a>
               </div>
-            </div>
+            </div> -->
             <!-- END Form Control-->
             <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign in</button>
           </form>
